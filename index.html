@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Changer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="Container">
+        <h1>Change the CSS of below image! With the help of the Sliders</h1>
+        <span>Javascript</span>
+    <div class="CSS-Controller">
+        <label for="color">Base Color</label>
+        <input type="color" id="base" name="Base-Color" value="#f38a42">
+
+        <label for="Width">Width:</label>
+        <input
+        type="range"
+        id="width"
+        name="Width"
+        min="0"
+        max="100"
+        value="30"
+        data-sizing="%"
+        >
+
+        <label for="Border">Border-Radius:</label>
+        <input
+        type="range"
+        id="Border"
+        name="Border-Radius"
+        min="0"
+        max="100"
+        value="15"
+        data-sizing="%";
+        >
+
+        <label for="Padding">Padding:</label>
+        <input
+        type="range"
+        id="Padding"
+        name="Padding"
+        min="0"
+        max="50"
+        value="0"
+        data-sizing="px";
+        >
+
+        <label for="Blur">Blur:</label>
+        <input
+        type="range"
+        id="Blur"
+        name="Blur"
+        min="0"
+        max="10"
+        value="0"
+        data-sizing="px";
+        >
+    </div>
+    <img src="https://th.bing.com/th/id/R.549e876a7f91663e95975d79b7516974?rik=nx5Fpgea9g6RMQ&riu=http%3a%2f%2fthewowstyle.com%2fwp-content%2fuploads%2f2015%2f02%2fnow-i-am-free.jpg&ehk=SsbAH1k3s%2fsYdA90AzEWYXxbMQPtzPRG6B%2b0NB8JduA%3d&risl=&pid=ImgRaw&r=0" alt="Random Image">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

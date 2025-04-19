@@ -1,0 +1,75 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --Base-Color: #f38a42;
+    --Width:30%;
+    --Border-Radius:15px;
+    --Padding:0px;
+    --Blur:0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    font-family: sans-serif;
+    background-color: #f6f6f6;
+}
+.Container{
+    background: linear-gradient(to right,#e66465,#9198e5);
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px rgba(246,178,172,0.2),-10px -10px 30px rgba(255,107,107,0.8);
+    padding: 3rem;
+    width: 60VW;
+}
+h1{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #f6f6f6;
+}
+span{
+    color: var(--Base-Color);
+    font-size: 2rem;
+    font-weight: 800;
+}
+.CSS-Controller{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem 0;
+    color: #f6f6f6;
+}
+img{
+    margin-top: 1rem;
+    width: var(--Width) ;
+    padding: var(--Padding);
+    border-radius: var(--Border-Radius);
+    filter: blur(var(--Blur));
+    background-color: var(--Base-Color);
+    transition: filter 0.3s ease, background-color 0.3s ease;
+}
+label{
+    margin: 0.5rem;
+    padding-left: 1rem;
+}
+input[type="color"]{
+    width: 30px;
+    height: 30px;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.CSS-Controller input[type="color"]::-webkit-color-swatch{
+    border: none;
+    border-radius: 50%;
+}
+.CSS-Controller input[type="color"]::-webkit-color-swatch-wrapper{
+    padding: 0;
+}
+input[type="range"]{
+    width: 100%;
+}
